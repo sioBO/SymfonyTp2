@@ -1,0 +1,13 @@
+{% extends 'JjhGsbBundle::layout.html.twig' %}
+{% block title %}
+La ségmentation du réseau
+{% endblock %}
+{% block contenu %}
+ <h4>L'organisation des VLAN et de l'adressage IP est la suivante : </h4>
+ <img id="centre" src="{{ asset('bundles/JjhGsb/images/segmentation.png') }}" alt="La repartition des services" width="400" height="" />
+
+<ul><h4>Les règles actuelles concernant les vlans sont les suivantes :</h4>
+<li>Chaque vlan (sauf le vlan visiteur) peut uniquement accéder (quel que soit le protocole) aux vlans "Serveurs" et "Sortie";</li>
+<li>L vlan "Visiteurs" peut uniquement interroger les serveur DNS et DHCP et sortir sur internet ;</li>
+</ul>
+{% endblock %}

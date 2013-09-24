@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<head> 
+<meta charset="windows-1252"> 
+		  <title>{% block title %}GSB{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('bundles/JjhGsb/css/style.css') }}" type="text/css" media="all" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <div id="page">
+            <div id="entete">
+                <img id="logoGSB" src="{{ asset('bundles/JjhGsb/images/logo.jpg') }}" alt="Le logo de GSB" width="198" height="130" />
+                <h1 id="centre">Le laboratoire pharmaceutique GSB : Galaxy-Swiss Bourdin</h1>
+            </div>
+			
+            <div id="menu">
+				<h3 id="centre">LE MENU</h3>
+                <ul id="menuList">
+                    <h4>Présentation</h4>
+                    <li class="smenu"><a href="{{ path('JjhGsbBundle_Accueil') }}">L'entreprise</a></li>
+                    <li class="smenu"><a href="{{ path('JjhGsbBundle_Activite') }}">L'activité</a></li>
+
+                    <h4>Le SI</h4>
+		    <li class="smenu"><a href="{{ path('JjhGsbBundle_Description') }}">La description</a></li>
+                     <li class="smenu"><a href="{{ path('JjhGsbBundle_Gestion') }}">La gestion</a></li>
+                      <li class="smenu"><a href="{{ path('JjhGsbBundle_Equipement') }}">L'équipement</a></li>
+                    <h4>Le réseau</h4>
+		    <li class="smenu"><a href="{{ path('JjhGsbBundle_Repartition') }}">La répartition</a></li>
+                     <li class="smenu"><a href="{{ path('JjhGsbBundle_Segmentation') }}">La segmentation</a></li>
+                </ul>
+<br>
+            </div>
+            <div id="contenu">
+                <h1 class="centre">{{ block('title') }}</h1>
+                {% block contenu %}
+                {% endblock %}
+                <a href="{{path('JjhGsbBundle_Accueil')}}">Retour à l'acceuil</a>
+            </div>
+            <div id="pied">
+                <p>{{ 'copyright'|trans }} © 2013-2014</p>
+            </div>
+        </div>
+    </body>
+</html>

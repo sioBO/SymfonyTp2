@@ -1,0 +1,9 @@
+{% extends 'JjhMonPremierBundle::layout.html.twig' %}
+ {% block title %}
+{{ parent() }} - TP2 SLAM4
+{% endblock %}
+{% block body %}
+{% include "JjhMonPremierBundle::debut.html.twig" with {'var1':'Symfony','var2':'2.3.3'}%}  
+<h4>{{block('title')}}</h4>
+<h3>Le but est de bien gérer l'architecture globale de ce framework</h3> 
+{% endblock %}

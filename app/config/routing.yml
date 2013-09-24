@@ -1,0 +1,6 @@
+JjhMonPremierBundle_entree:
+    resource: "@JjhMonPremierBundle/Resources/config/routing.yml"
+    prefix:   /Jjh
+JjhGsbBundle_entree:
+    resource: "@JjhGsbBundle/Resources/config/routing.yml"
+    prefix:   /Gsb

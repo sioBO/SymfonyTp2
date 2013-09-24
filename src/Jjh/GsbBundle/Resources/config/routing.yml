@@ -1,0 +1,29 @@
+jjh_gsb_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: JjhGsbBundle:Default:index }
+JjhGsbBundle_Accueil:
+    pattern:  /
+    defaults: { _controller: JjhGsbBundle:Default:index }
+JjhGsbBundle_Activite:
+    pattern:  /activite
+    defaults: { _controller: JjhGsbBundle:Default:activite}
+JjhGsbBundle_Description:
+    pattern:  /description
+    defaults: { _controller: JjhGsbBundle:Si:description }
+JjhGsbBundle_Gestion:
+    pattern:  /gestion
+    defaults: { _controller: JjhGsbBundle:Si:gestion }  
+JjhGsbBundle_Equipement:
+    pattern:  /equipement
+    defaults: { _controller: JjhGsbBundle:Si:equipement }
+JjhGsbBundle_Repartition:
+    pattern:  /repartition
+    defaults: { _controller: JjhGsbBundle:Reseau:repartition }
+JjhGsbBundle_Segmentation:
+    pattern:  /segmentation
+    defaults: { _controller: JjhGsbBundle:Reseau:segmentation }
+
+
+
+
+

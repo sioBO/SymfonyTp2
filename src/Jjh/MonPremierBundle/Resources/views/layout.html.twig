@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenu(e){% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/JjhMonPremier/css/styles.css') }}" type="text/css" media="all" /> 
+    </head>
+    <body>
+         <img src="{{ asset('bundles/JjhMonPremier/images/logo.gif') }}" alt="logo" width="128" height="128" />
+      
+        {% block body %}{% endblock %}
+
+    </body>
+</html>

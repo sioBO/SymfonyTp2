@@ -1,0 +1,20 @@
+{% extends 'JjhGsbBundle::layout.html.twig' %}
+{% block title %}
+La répartition du réseau
+{% endblock %}
+{% block contenu %}
+ <h3>Chaque étage dispose d'une baie de brassage qui le relie par une fibre à la baie centrale de la salle serveurs. </h3>
+
+
+<h3>Toutes les salles de réunion sont équipées d'un point d'accès Wifi positionné par défaut dans le VLAN "Visiteurs" qui autorise uniquement un accès Internet. </h3>
+<h3>Les portables connectés en wifi à ce point d'accès reçoivent ainsi une adresse IP et n'ont, par conséquent accès qu'aux services DHCP et DNS.</h3>
+
+<h3>Le point d’accès peut être configuré à la demande pour être raccordé à un VLAN présent au niveau de l'étage.</h3>
+
+<h3>Chaque salle de réunion dispose d'un vidéoprojecteur, d'enceintes et d'un tableau numérique interactif. </h3>
+
+<h3>La salle "Démonstration" est destinée à l'accueil des organismes de santé (AFSSAPS notamment) et des partenaires scientifiques. Elle dispose de paillasses et d'équipements de laboratoire, en plus d'une salle de réunion.</h3>
+
+<h4>En voici le schéma:</h4>
+ <img id="centre" src="{{ asset('bundles/JjhGsb/images/repartition.png') }}" alt="La repartition des services" width="500" height="" />
+{% endblock %}
